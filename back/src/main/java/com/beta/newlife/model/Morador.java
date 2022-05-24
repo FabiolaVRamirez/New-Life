@@ -14,15 +14,25 @@ public class Morador {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_morador")
     private Long id;
+    @Column(name = "apartamento")
     private Long apartamento;
+    @Column(name = "nome")
     private String nome;
+    @Column(name = "rg")
     private String rg;
+    @Column(name = "cpf")
     private String cpf;
+    @Column(name = "telefone1")
     private String telefone1;
+    @Column(name = "telefone2")
     private String telefone2;
+    @Column(name = "email")
     private String email;
+    @Column(name = "contato_emergencia")
     private String contatoEmergencia;
+    @Column(name = "ce_telefone")
     private String ceTelefone;
+    @Column(name = "observacao")
     private String observacao;
 
     public Morador() {

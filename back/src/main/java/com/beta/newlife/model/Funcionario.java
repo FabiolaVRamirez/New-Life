@@ -14,13 +14,21 @@ public class Funcionario {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_funcionario")
     private Long id;
+    @Column(name = "apartamento")
     private Long apartamento;
+    @Column(name = "nome")
     private String nome;
+    @Column(name = "rg")
     private String rg;
+    @Column(name = "cpf")
     private String cpf;
+    @Column(name = "telefone1")
     private String telefone1;
+    @Column(name = "telefone2")
     private String telefone2;
+    @Column(name = "observacao")
     private String observacao;
+    @Column(name = "id_morador")
     private Long id_morador;
 
     public Funcionario () {

@@ -14,11 +14,17 @@ public class Veiculo {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_veiculo")
     private Long id;
+    @Column(name = "apartamento")
     private Long apartamento;
+    @Column(name = "placa")
     private String placa;
+    @Column(name = "marca")
     private String marca;
+    @Column(name = "modelo")
     private String modelo;
+    @Column(name = "cor")
     private String cor;
+    @Column(name = "id_morador")
     private Long id_morador;
 
     public Veiculo() {
